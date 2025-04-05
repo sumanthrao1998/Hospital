@@ -1,0 +1,91 @@
+/* HomePage.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #d9e4f5);
+    min-height: 100vh;
+}
+
+.home-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+}
+
+.home-title {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.module-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    cursor: pointer;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.module-card h2 {
+    font-size: 2.2rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.module-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #1c6690;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .module-card {
+        padding: 30px;
+    }
+}

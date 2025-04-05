@@ -1,0 +1,118 @@
+/* Container Styling */
+.records-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.records-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Title Styling */
+.records-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Table Wrapper with Scroll */
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Table Styling */
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    min-width: 1000px;  /* Ensures no wrapping for smaller columns */
+}
+
+/* Header Styling */
+.records-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 1px solid #ddd;
+    white-space: nowrap;  /* Prevents text wrapping */
+}
+
+/* Table Cells */
+.records-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    color: #555;
+    white-space: nowrap;  /* Prevents table cells from wrapping */
+    text-align: left;
+}
+
+/* Row Hover Effect */
+.records-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Alternate Row Coloring */
+.records-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Empty State Message */
+.no-records {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+/* Button Styling */
+.add-record-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.add-record-btn:hover {
+    background-color: #219150;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .records-container {
+        padding: 20px;
+    }
+    
+    .records-title {
+        font-size: 22px;
+    }
+
+    .records-table {
+        font-size: 14px;
+    }
+}

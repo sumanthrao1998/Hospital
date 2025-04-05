@@ -1,0 +1,87 @@
+/* AddPatientForm.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px; /* Increased padding for a spacious feel */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%); /* Subtle gradient background */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased spacing between form groups */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* More space below labels */
+    color: #555; /* Softer color for labels */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners for inputs */
+    font-size: 16px; /* Slightly larger font size for readability */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px 20px;
+    color: white;
+    background: #007bff; /* Primary button color */
+    border: none;
+    border-radius: 6px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 16px; /* Consistent font size with inputs */
+    transition: background 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+button:hover {
+    background: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+.form-actions {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px; /* Spacing above action buttons */
+}
+/* Error styling */
+.error-border {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}

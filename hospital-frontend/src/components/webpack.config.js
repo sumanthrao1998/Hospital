@@ -1,0 +1,20 @@
+module.exports = {
+    resolve: {
+      fallback: {
+        "fs": false
+      }
+    },
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          enforce: "pre",
+          loader: "source-map-loader",
+          exclude: [
+            /node_modules[\\/]react-datepicker[\\/]/
+          ],
+        },
+      ],
+    },
+  };
+  
